@@ -71,7 +71,7 @@ class ApplicationStore extends StatelessWidget {
                                     Text(
                                       'Store Name',
                                       style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 16,
                                         color: Color.fromARGB(255, 53, 97, 254),
                                       ),
                                     ),
@@ -131,7 +131,7 @@ class ApplicationStore extends StatelessWidget {
                         ),
                       ),
 
-                      SizedBox(height: 50),
+                      SizedBox(height: 15),
 
                       //Sección del dinero
                       Container(
@@ -143,7 +143,7 @@ class ApplicationStore extends StatelessWidget {
                                 Text(
                                   'Your budget',
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 16,
                                     color: Colors.white,
                                   ),
                                 ),
@@ -162,7 +162,7 @@ class ApplicationStore extends StatelessWidget {
                                   '2.868.000,',
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 50,
+                                    fontSize: 40,
                                     color: Colors.white,
                                   ),
                                 ),
@@ -217,7 +217,7 @@ class ApplicationStore extends StatelessWidget {
                                   Text(
                                     'Incomes',
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      fontSize: 16,
                                       color: Colors.white,
                                     ),
                                   ),
@@ -318,12 +318,12 @@ class ApplicationStore extends StatelessWidget {
                                   Text(
                                     'Spending',
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      fontSize: 16,
                                       color: Colors.white,
                                     ),
                                   ),
 
-                                  SizedBox(width: 26),
+                                  SizedBox(width: 32),
 
                                   Row(
                                     children: [
@@ -389,7 +389,7 @@ class ApplicationStore extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 20),
+                SizedBox(height: 10),
 
                 //Sección categoria
                 Container(
@@ -399,23 +399,31 @@ class ApplicationStore extends StatelessWidget {
                     children: [
                       Container(
                         width: 180,
-                        height: 70,
+                        height: 50,
+                        margin: EdgeInsets.only(left: 20),
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(243, 246, 255, 1),
-                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromRGBO(227, 234, 255, 1),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Categories', style: TextStyle(fontSize: 20)),
+                            Text('Categories', style: TextStyle(fontSize: 16)),
                           ],
                         ),
                       ),
-                      Text(
-                        'Recent transaction',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Color.fromRGBO(113, 113, 112, 1),
+                      Container(
+                        margin: EdgeInsets.only(right: 35),
+                        child: Column(
+                          children: [
+                            Text(
+                              'Recent transaction',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Color.fromRGBO(113, 113, 112, 1),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
@@ -437,7 +445,7 @@ class ApplicationStore extends StatelessWidget {
                       Text(
                         'View All',
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 16,
                           color: Color.fromRGBO(0, 71, 255, 1),
                         ),
                       ),
@@ -474,12 +482,13 @@ class ApplicationStore extends StatelessWidget {
                       SizedBox(width: 20),
                       Container(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'Food & Drink',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20,
+                                fontSize: 16,
                               ),
                             ),
                             SizedBox(height: 10),
@@ -490,7 +499,7 @@ class ApplicationStore extends StatelessWidget {
                             Text(
                               '\$ 391.254,01',
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 16,
                                 color: Color.fromRGBO(0, 71, 255, 1),
                               ),
                             ),
@@ -498,33 +507,44 @@ class ApplicationStore extends StatelessWidget {
                         ),
                       ),
 
-                      SizedBox(width: 100,),
+                      SizedBox(width: 130),
 
                       Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             width: 55,
                             height: 20,
                             decoration: BoxDecoration(
                               color: Color.fromRGBO(35, 159, 87, 0.2),
-                              borderRadius: BorderRadius.circular(10)
+                              borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Row(children: [
-                              Icon(Icons.keyboard_control_key, color: Colors.green,),
-                              Text('1.8 %', style: TextStyle(color: Colors.green, fontSize: 10),)
-                            ],
-                          )),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.keyboard_control_key,
+                                  color: Colors.green,
+                                ),
+                                Text(
+                                  '1.8 %',
+                                  style: TextStyle(
+                                    color: Colors.green,
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ],
                   ),
                 ),
 
-                SizedBox(height: 20,),
-                //Electronicos
+                SizedBox(height: 20),
 
-                 Container(
+                //Electronicos
+                Container(
                   padding: EdgeInsets.all(20),
                   width: 400,
                   height: 140,
@@ -547,15 +567,18 @@ class ApplicationStore extends StatelessWidget {
                           height: 50,
                         ),
                       ),
+
                       SizedBox(width: 20),
+
                       Container(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'Electronics',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20,
+                                fontSize: 16,
                               ),
                             ),
                             SizedBox(height: 10),
@@ -566,7 +589,7 @@ class ApplicationStore extends StatelessWidget {
                             Text(
                               '\$ 3.176.254,01',
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 16,
                                 color: Color.fromRGBO(0, 71, 255, 1),
                               ),
                             ),
@@ -574,7 +597,7 @@ class ApplicationStore extends StatelessWidget {
                         ),
                       ),
 
-                      SizedBox(width: 100,),
+                      SizedBox(width: 120),
 
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -584,13 +607,24 @@ class ApplicationStore extends StatelessWidget {
                             height: 20,
                             decoration: BoxDecoration(
                               color: Color.fromRGBO(35, 159, 87, 0.2),
-                              borderRadius: BorderRadius.circular(10)
+                              borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Row(children: [
-                              Icon(Icons.keyboard_control_key, color: Colors.green,),
-                              Text('43.6 %', style: TextStyle(color: Colors.green, fontSize: 10),)
-                            ],
-                          )),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.keyboard_control_key,
+                                  color: Colors.green,
+                                ),
+                                Text(
+                                  '43.6 %',
+                                  style: TextStyle(
+                                    color: Colors.green,
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ],
@@ -598,11 +632,9 @@ class ApplicationStore extends StatelessWidget {
                 ),
 
                 //Medicinas
+                SizedBox(height: 20),
 
-                SizedBox(height: 20,),
-                //Electronicos
-
-                 Container(
+                Container(
                   padding: EdgeInsets.all(20),
                   width: 400,
                   height: 140,
@@ -628,12 +660,13 @@ class ApplicationStore extends StatelessWidget {
                       SizedBox(width: 20),
                       Container(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'Health',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20,
+                                fontSize: 16,
                               ),
                             ),
                             SizedBox(height: 10),
@@ -644,7 +677,7 @@ class ApplicationStore extends StatelessWidget {
                             Text(
                               '\$ 38,01',
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 16,
                                 color: Color.fromRGBO(0, 71, 255, 1),
                               ),
                             ),
@@ -652,7 +685,7 @@ class ApplicationStore extends StatelessWidget {
                         ),
                       ),
 
-                      SizedBox(width: 165,),
+                      SizedBox(width: 165),
 
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -662,13 +695,24 @@ class ApplicationStore extends StatelessWidget {
                             height: 20,
                             decoration: BoxDecoration(
                               color: Color.fromRGBO(249, 56, 57, 0.2),
-                              borderRadius: BorderRadius.circular(10)
+                              borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Row(children: [
-                              Icon(Icons.keyboard_arrow_down, color: Colors.red,),
-                              Text('25.8 %', style: TextStyle(color: Colors.red, fontSize: 10),)
-                            ],
-                          )),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.keyboard_arrow_down,
+                                  color: Colors.red,
+                                ),
+                                Text(
+                                  '25.8 %',
+                                  style: TextStyle(
+                                    color: Colors.red,
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ],
